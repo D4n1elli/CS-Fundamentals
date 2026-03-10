@@ -22,6 +22,8 @@ def stack_action(decision, stack):
             for item in reversed(stack):
                 print(item)
 
+            print(f"If you press R, the item removed will be: {stack[-1]}")
+
     elif decision == "A":
         item = input("New item: ")
         stack.append(item)
